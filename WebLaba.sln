@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebLaba", "WebLaba\WebLaba.csproj", "{E6E92ACD-85D7-40A6-A155-ECDEF2571DA2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{573A6D9C-2753-4F52-8C82-A7C611D70CB3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6E92ACD-85D7-40A6-A155-ECDEF2571DA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E92ACD-85D7-40A6-A155-ECDEF2571DA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E92ACD-85D7-40A6-A155-ECDEF2571DA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E92ACD-85D7-40A6-A155-ECDEF2571DA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0402627D-77CA-47B3-93B6-601B47169D9D}
+	EndGlobalSection
+EndGlobal

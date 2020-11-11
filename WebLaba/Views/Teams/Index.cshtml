@@ -1,0 +1,46 @@
+﻿@model IEnumerable<WebLaba.Models.Teams>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a href='@Url.Action("Create", "Teams", new { corpId = @ViewBag.corpId })'>Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Icon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Corporation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@("~/Icon/" + item.Icon)" asp-append-version="true" width="50" height="50" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Corporation.Name)
+                </td>
+                <td>
+                    <a href='@Url.Action("Edit", "Teams", new { id = item.Id, corpId = @ViewBag.corpId })'>Edit</a> |
+                    <a href="@Url.Action("Index", "Players", new { teamId = item.Id })">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
